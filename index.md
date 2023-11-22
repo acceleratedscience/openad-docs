@@ -1,35 +1,69 @@
 ---
-title: Home
+title: Overview
 layout: home
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# OpenAD Beta
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+**Opensource Toolkits for Molecular Science**
 
-More specifically, the created site:
+![Landing](assets/screenshot-landing.png)
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+OpenAD is an openSource framework developed by IBM Research, aggregating a number of molecular science toolkits into a single API that can be accessed by command line, a Jupyter Notebook and (soon) an API.
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+The goal of openAD is to provide a common language for scientists to interact with a multitude of of molecular tools to simplify the triage process and drastically accelerate your development timelines.
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+The OpenAD Beta will be integrating with the following IBM Research toolkits:
 
-To get started with creating a site, simply:
+-   ### [DS4SD](https://ds4sd.github.io/)
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+    _Deep Search for Scientific Discovery_<br>
+    Connecting & ingesting unstructured data
+    {: .no-gap }
+    <details markdown="block">
+    <summary>More</summary>
+    <div>
+        <p>The Deep Search toolkit uses AI to convert unstructured PDF documents into structured JSON files and enables you to automate knowledge extraction.</p>
+        <p>You can use it for both public and proprietary documents.</p>
+    </div>
+    </details>
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+-   ### [RXN](https://rxn.res.ibm.com/)
 
-----
+    Computational Chemistry
+    {: .no-gap }
+    <details markdown="block">
+    <summary>More</summary>
+    <div>
+        <p>The Reaction toolkit uses AI to predict chemical reactions, retrosynthesis pathways and experimental procedures.</p>
+        <p>You can train AI models to build intelligence in your specific chemistry domain, and scale your analysis and model training while securing your data using features of the Discovery Platform.</p>
+    </div>
+    </details>
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+-   ### [GT4SD](https://github.com/GT4SD/gt4sd-core)
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+    <span class="mini-label">Coming soon</span><br>
+    _Generative Toolkit for Scientific Discovery_<br>
+    Molecular modeling & inferences
+    {: .no-gap }
+    <details markdown="block">
+    <summary>More</summary>
+    <div>
+        The Generative Toolkit accelerates hypothesis generation in the scientific discovery process. It provides a library for making state-of-the-art generative AI models easier to use.
+    </div>
+    </details>
+
+-   ### [ST4SD](https://st4sd.github.io/overview/)
+
+    <span class="mini-label">Coming soon</span><br>
+    _Simulation Toolkit for Scientific Discovery_<br>
+    Virtual Experiments
+    {: .no-gap }
+    <details markdown="block">
+    <summary>More</summary>
+    <div>
+        <p>The Simulation Toolkit simplifies the development, execution and dissemination of virtual experiments.</p>
+        <p>A virtual experiment is an application workflow which measures one or more characteristics of one or more input systems. It is the computational analog of a lab experiment.</p>
+    </div>
+    </details>

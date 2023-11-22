@@ -1,0 +1,65 @@
+// Typograhy
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;500&display=swap';
+
+$body-font-family: 'IBM Plex Sans', system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, sans-serif;
+$mono-font-family: 'IBM Plex Mono', 'SFMono-Regular', menlo, consolas, monospace;
+
+// Font sizes
+$font-size-1: 8px;
+$font-size-1-sm: 9px;
+$font-size-2: 10px; // h4 - uppercased!, h6 not uppercased, text-small
+$font-size-3: 11px; // h5
+$font-size-4: 12px;
+$font-size-5: 14px; // h3
+$font-size-6: 16px; // h2
+$font-size-7: 24px;
+$font-size-8: 32px; // h1
+$font-size-9: 36px;
+$font-size-10: 42px;
+$font-size-10-sm: 48px;
+
+// Grid system
+$nav-list-item-height: $sp-7;
+$nav-list-item-height-sm: $sp-8;
+
+// Base colors
+$grey-dk-000: #a8a8a8;
+$grey-dk-100: #525252;
+$grey-dk-200: #525252;
+$grey-dk-250: #393939;
+$grey-dk-300: #161616;
+$grey-lt-000: #f4f4f4;
+$grey-lt-100: #e5e5e5;
+$grey-lt-200: #e5e5e5;
+$grey-lt-300: #cacaca;
+$blue-000: #0f62fe;
+$blue-100: #0353e9;
+$blue-200: #0353e9;
+$blue-300: #002d9c;
+
+// Element colors
+$body-background-color: $white;
+$sidebar-color: $grey-lt-000;
+$border-color: $grey-lt-000;
+$body-text-color: $grey-dk-300;
+$body-heading-color: $grey-dk-300;
+$nav-child-link-color: $grey-dk-200;
+$link-color: $blue-000;
+$btn-primary-color: $blue-000;
+$base-button-color: $grey-dk-250;
+$search-result-preview-color: $grey-dk-000;
+$search-background-color: $white;
+$table-background-color: $white;
+$border-color: $grey-lt-100;
+$feedback-color: darken($sidebar-color, 3%);
+
+// Custom colors
+$body-text-color-soft: $grey-dk-000;
+$side-nav-hover: rgba(black, 0.03);
+$side-nav-active: rgba(black, 0.07);
+$table-header: $grey-lt-000;
+
+// Code colors
+// @import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
+
+// $code-background-color: #31343f;
