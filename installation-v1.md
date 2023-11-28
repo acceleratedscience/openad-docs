@@ -1,29 +1,23 @@
----
+<!-- ---
 title: Installation
 layout: home
 nav_order: 2
----
-
-<!-- https://themoenen.github.io/openad-docs/ -->
+--- -->
 
 ## tl;dr <!-- omit from toc -->
 
-> **Note:** This will install OpenAD in your global space. If you wish to use a virtual environment, please see more [detailed instructions](#installation) below.
+    pip install git+https://github.com/acceleratedscience/open-ad-toolkit.git
+    openad/setup.sh
+    poetry shell
 
-<!-- git clone https://github.com/acceleratedscience/open-ad-toolkit.git
-    cd open-ad-toolkit
-    ./setup.sh
-    [follow instructions]
-    openad -->
+<div style="background:red;color:yellow;margin-bottom: 8px;">"openad/setup.sh" is incorrect, see below</div><br>
 
-    pip install openad
+CLI:
+
     openad
 
+Jupyter:
 
-Get started with Jupyter:
-
-    init_magic
-    init_examples
     jupyter lab ~/openad_notebooks/Table_of_Contents.ipynb
 
 <hr>
@@ -33,8 +27,6 @@ Get started with Jupyter:
 - [Installation](#installation)
 - [Getting Started - CLI](#getting-started---cli)
 - [Getting Started - Jupyter](#getting-started---jupyter)
-  - [Setting up Jupyter](#setting-up-jupyter)
-  - [Launching OpenAD in Jupyter](#launching-openad-in-jupyter)
 - [Interacting with the Toolkits](#interacting-with-the-toolkits)
     - [Registration](#registration)
     - [Adding a Toolkit](#adding-a-toolkit)
@@ -42,11 +34,11 @@ Get started with Jupyter:
     - [Running Bash Commands (CLI)](#running-bash-commands-cli)
 - [AI Assistant](#ai-assistant)
 - [Contribute](#contribute)
-  - [Installation for Development](#installation-for-development)
-  - [Testing a branch](#testing-a-branch)
+    - [Installation for Development](#installation-for-development)
+    - [Testing a branch](#testing-a-branch)
 - [Installing on Windows](#installing-on-windows)
-  - [Before you start](#before-you-start)
-  - [Installing WSL](#installing-wsl)
+    - [Before you start](#before-you-start)
+    - [Installing WSL](#installing-wsl)
 
 ### Before You Start <!-- omit from toc -->
 
@@ -58,112 +50,93 @@ Get started with Jupyter:
 
 # Installation
 
-> **Note:** Contributors should skip to [Installation for Development](#installation-for-development)<br>
-> **Note:** If you prefer using poetry and you know what you're doing, you can skip the instructions below and run `poetry add openad` instead.
+> **Note:** Contributors should skip to [Installation for Development](#installation-for-development)
 
-1.  **Step 0: Before you start**<br>
-Ensure you're running Python 3.10.10 or above. There's multiple ways of doing this, we'll use pyenv.
+Run the following commands in your terminal:
 
-        git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-        pyenv install 3.10
+1.  **Step 1: Download**
 
-1.  **Step 1: Set up your virtual environment** (optional)<br>
+        pip install git+https://github.com/acceleratedscience/open-ad-toolkit.git
 
-        python -m venv ~/ad-venv
-        source ~/ad-venv/bin/activate
+    <!-- > _**Note:** You need to have SSH enabled for this command to work. Alternatively you can simply download the repository._ -->
 
-    > **Note:** To exit the virtual environment, you can run `deactivate`
+    <div style="background:red;color:yellow;margin-bottom: 8px;">@Phil SSH/HTTP, does it matter? Enterprise instructions used SSH but that doesn't seem to work with the public repo ("fatal: Could not read from remote repository.")</div>
 
-2.  **Step 2: Installation**
+    <div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel current instructions from Phil say "If you have an existing Poetry Project simply run `poetry add git+https://github.com/acceleratedscience/open-ad-toolkit.git`" but this results in error for me "Poetry could not find a pyproject.toml file". I want to understand what "having an existing poetry project" means to see if we should include this or not.</div>
 
-        pip install openad
+    <div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel I'd like to walk over <a href="https://acceleratedscience.github.io/open-ad-toolkit/docs/getting_started.html">current instructions</a> with you to make sure these our outdated:<br>- "Installing via Pip"<br>- "Use Jupyter Notebooks"</div>
 
-<br>
+2.  **Step 2: Install**
+
+        /opt/homebrew/lib/python3.11/site-packages/openad/setup.sh
+
+<div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel This path name would bedifferent per user, how can we activate the setup script more elegantly?</div>
+<div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel Is download/install the right terminology? The download step is an install itself...</div>
 
 # Getting Started - CLI
 
--   **Enter the virtual environment**
-    
-    > **Note:** If you just installed OpenAD, you probably already activated the virtual environment.
+Run the following command in the terminal:
 
-        source ~/ad-venv/bin/activate
+-   **Entering the virtual environment**
 
--   **Enter the command shell**
+    > **Note:** This step can be skipped if you chose to install OpenAD globally.
 
-        openad
+         poetry shell
+
+<div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel Is poetry shell launching the venv? Wanna make sure I describe it correctly</div>
+<div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel Can this step indeed be skipped when installing globally?</div>
+
+-   **Entering the command shell**
+
+         openad
+
+    <div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel Is "shell" the right term? It's a bit confusing given that the previous command was "poetry shell"</div>
 
     <!-- ![Landing](assets/screenshot-landing.png) -->
-    <!-- <a href="assets/screenshot-landing.png" target="_blank"><img src="assets/screenshot-landing.png" /></a> -->
 
--   **Exit the command shell**<br>
+    <a href="assets/screenshot-landing.png" target="_blank"><img src="assets/screenshot-landing.png" /></a>
+
+-   **Exiting the command shell**<br>
     Hit `ctrl+c` or run:
 
         exit
 
--   **Run a single command from outside the command shell**
+-   **Running a single command from outside the command shell**
 
         openad <command>
 
--   **Exit the virtual environment**<br>
+-   **Exiting the virtual environment**<br>
 
         deactivate
 
-<br>
+    <div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel Is this the right command?</div>
 
 # Getting Started - Jupyter
 
-## Setting up Jupyter
+The easiest way to get started in Jupyter is by taking a look at the examples. You should find them at `~/openad_notebooks`, or if they're not installed you can run `init_examples`.
 
-The following commands only need to be run once after installation:
+<div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel Can you confirm init_examples is part of the poetry install?</div>
 
-1.  **Activate your virtual environment**
-
-    > **Note:** If you just installed OpenAD, you probably already activated the virtual environment.
-
-        source ~/ad-venv/bin/activate
-
-1.  **Create an iPython kernel**<br>
-    This ports your virtual environment to Jupyter.
-
-        python -m ipykernel install --user --name=ad-venv
-    
-    > **Note:** To list your installed iPython kernels, you can run `jupyter kernelspec list`, and to remove the kernel you can run `jupyter kernelspec uninstall ad-venv`
-
-1.  **Install the magic commands**<br>
-    This enables OpenAD commands to be run within a Jupyter Notebook.
-
-        init_magic
-
-1.  **Install example Notebooks**<br>
-    This installs our example Notebooks at `~/openad_notebooks`.
-    
-        init_examples
-
-## Launching OpenAD in Jupyter
-
-1.  **Open any Notebook**<br>
-    The following command will open up the example Notebook:
+-   **Open the table of contents**
 
         jupyter lab ~/openad_notebooks/Table_of_Contents.ipynb
 
-2.  **Select the kernel**<br>
-    Make sure to select the "ad-venv" iPython kernel. You can do this under _Kernel > Change Kernel_, or in the latest versions of Jupyter by clicking the kernel name in the top right hand corner. If you don't see your iPython kernel, make sure you followed the Jupyter Setup instructions listed above.
+-   **Select the kernel**<br>
+    Make sure to select the "ad-kernel" iPython kernel. You can do this under _Kernel > Change Kernel_, or in the latest versions of Jupyter by clicking the kernel name in the top right hand corner.
 
 <figure>
-    <a href="assets/jupyter-notebook-kernel.png" target="_blank"><img src="assets/jupyter-notebook-kernel.png"></a>
+    <img src="assets/jupyter-notebook-kernel.png">
     <figcaption align="center" style="font-size:0.9em;opacity:.6;margin-top:-30px;margin-bottom:50px"><i>Jupyter Notebook</i></figcaption>
 </figure>
 <figure>
-    <a href="assets/jupyter-lab-kernel.png" target="_blank"><img src="assets/jupyter-lab-kernel.png"></a>
+    <img src="assets/jupyter-lab-kernel.png">
     <figcaption align="center" style="font-size:0.9em;opacity:.6;margin-top:-30px;margin-bottom:50px"><i>Jupyter Lab</i></figcaption>
 </figure>
 
-1.  **Magic Commands**<br>
+-   **Magic Commands**<br>
     Magic commands let you run terminal commands from within Jupyter. They are invoked by the `%openad` prefix. All OpenAD CLI commands can be accessed like this. For example:<br>
 
         %openad list files
-
-<br>
 
 # Interacting with the Toolkits
 
@@ -197,7 +170,7 @@ Before you can interact with the toolkits, you'll need to register with each ind
         > **Note:** Your DS4SD auth config file is saved as `~/.openad/ds-auth.ext-v2.json`. If you ever want to reset your DS4SD login information, simply delete this file.<br>
 
 3. You should get a message saying you successfully logged in.
-</details>
+ </details>
 
 <details markdown="block">
 <summary>Register with RXN</summary>
@@ -223,10 +196,8 @@ Before you can interact with the toolkits, you'll need to register with each ind
 
 ### Adding a Toolkit
 
-First install the toolkit, then set the context to this toolkit.
-
-    add toolkit ds4sd
-    set context ds4sd
+    add toolkit ds4sd # Install the toolkit
+    set context ds4sd # Enter the toolkit environment
 
 ### Sample Commands
 
@@ -264,79 +235,42 @@ To enable our AI assistant, you'll need an account with OpenAI. There is a one m
 
 <a href="assets/openai-api-key.png" target="_blank"><img src="assets/openai-api-key.png" /></a>
 
-<br>
-
 # Contribute
 
 OpenAD is fully open source and we encourage contributions. We plan to provide documentation on how to integrate your own toolkits in the future.
 
 If you have any questions in the meantime, please [reach out]({% link about.md %}).
 
-## Installation for Development
+### Installation for Development
 
-<details markdown="block">
-<summary>Install using the setup wizard (uses poetry)</summary>
+Run the following commands in your terminal:
 
-1.  **Step 1: Download the repo**
+1.  **Step 1: Download**
 
-        git clone https://github.com/acceleratedscience/open-ad-toolkit.git
+        # Main branch
+        git clone git@github.com:acceleratedscience/open-ad-toolkit.git
 
-    > **Note:** To download a specific branch, you can run instead:<br>
-    `git clone -b <branch_name> https://github.com/acceleratedscience/open-ad-toolkit.git`
+        # Specific branch
+        git clone -b <branch_name> git@github.com:acceleratedscience/open-ad-toolkit.git
 
-2.  **Step 2: Launch the setup wizard**
+2.  **Step 2: Install**
 
-        cd open-ad-toolkit
-        ./setup.sh
+        openad/setup.sh
 
-</details>
+<div style="background:red;color:yellow;margin-bottom: 8px;">Currently the folder is called "openad_opentoolkit" but this should be changed</div>
+<div style="background:red;color:yellow;margin-bottom: 8px;">@Daniel/Phil Should we use "cd openad" + "./setup.sg" instead? Is there a reason for the CLI to point to the repo?</div>
 
-<details markdown="block">
-<summary>Install using pip</summary>
-
-1.  **Step 0: Before you start**<br>
-Ensure you're running Python 3.10.10 or above. There's multiple ways of doing this, we'll use pyenv.
-
-        git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-        pyenv install 3.10
-
-1.  **Step 1: Set up your virtual environment** (optional)<br>
-
-        python -m venv ~/ad-venv
-        source ~/ad-venv/bin/activate
-
-    > **Note:** To exit the virtual environment, you can run `deactivate`
-
-2.  **Step 2: Download the repo**
-
-        git clone https://github.com/acceleratedscience/open-ad-toolkit.git
-
-    > **Note:** To download a specific branch, you can run instead:<br>
-    `git clone -b <branch_name> https://github.com/acceleratedscience/open-ad-toolkit.git`
-
-3.  **Step 2: Install the requirements**
-
-        cd open-ad-toolkit
-        pip install -e .
-    
-    > **Note:** The -e flag stands for "editable". This means that instead of copying the package's files to the Python site-packages directory as in a regular installation, pip creates a symbolic link (symlink) from your package's source code directory into your Python environment.<br>This way you can make changes to the source code of the package, and those changes are immediately reflected in your Python environment. You don't need to reinstall the package every time you make a change.
-
-</details>
-
-
-## Testing a branch
+### Testing a branch
 
 To do a regular install from a particular branch, you can run:
 
     pip install git+https://github.com/acceleratedscience/open-ad-toolkit.git@<branch_name>
 
-<br>
-
 # Installing on Windows
 
 In order to run OpenAD on Windows 11, you will need to install the Ubuntu WSL package ("Windows Subsystem for Linux").
 
-## Before you start
+### Before you start
 
 -   **Verify Windows version**<br>
     To check if you are running Windows 11 or later, press `Win` + `R`, type "winver", and press `Enter`. A window will open showing your Windows version.
@@ -344,7 +278,7 @@ In order to run OpenAD on Windows 11, you will need to install the Ubuntu WSL pa
 -   **Verify WSL**<br>
     To check if you already have WSL installed, run `wsl -l -v` into the terminal. To see more information about your current version of Ubuntu, run `lsb_release -a`
 
-## Installing WSL
+### Installing WSL
 
 Install WSL and create a user called 'openad' or one of your choosing.
 

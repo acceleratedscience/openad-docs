@@ -1,0 +1,23 @@
+- Easy install (recomended):
+	A:	Poetry already installed?
+		poetry add openad
+	B: New to Poetry
+		pip install poetry
+		poetry install openad
+- Custom pip install
+	- Ensure python version
+		git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+		pyenv install 3.10
+	- Set up venv
+		python -m venv ~/ad-venv
+		source ~/ad-venv/bin/activate
+	- Pip install
+		pip install openad
+- Launch
+	openad
+
+
+
+- poetry shell enters poetry env
+- setup is just for dummies
+- poetry / pip install as recommended alternatives
