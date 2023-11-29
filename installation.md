@@ -143,7 +143,7 @@ The easiest way to get started in Jupyter is by taking a look at the examples. Y
 OpenAD integrates with `DS4SD`, `RXN`, and has placeholder support for `GT4SD` and `ST4SD`.
 
 <div class="notice" style="margin-top: 16px;">
-&#x26A0; Reminder: when running commands from Jupyter, prepend them with `%openad`
+<b>&#x26A0; Reminder:</b> when running commands from Jupyter, prepend them with `%openad`
 </div>
 
 ### Registration
