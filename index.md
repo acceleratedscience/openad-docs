@@ -21,7 +21,8 @@ The OpenAD Beta integrates with the following IBM Research [toolkits]({% link ba
 -   ### [DS4SD](https://ds4sd.github.io/)
 
     _Deep Search for Scientific Discovery_<br>
-    Connecting & ingesting unstructured data
+    Connecting & ingesting unstructured data<br>
+    [DS4SD Docs](https://pages.github.ibm.com/DeepSearch/docs/)
     {: .no-gap }
     <details markdown="block">
     <summary>More</summary>
@@ -33,7 +34,8 @@ The OpenAD Beta integrates with the following IBM Research [toolkits]({% link ba
 
 -   ### [RXN](https://rxn.res.ibm.com/)
 
-    Computational Chemistry
+    Computational Chemistry<br>
+    [RXN Video tutorials](https://rxn.app.accelerate.science/rxn/learn) (account required)
     {: .no-gap }
     <details markdown="block">
     <summary>More</summary>

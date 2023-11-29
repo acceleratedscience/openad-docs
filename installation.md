@@ -4,17 +4,9 @@ layout: home
 nav_order: 2
 ---
 
-<!-- https://themoenen.github.io/openad-docs/ -->
-
-## tl;dr <!-- omit from toc -->
+## Quick Install <!-- omit from toc -->
 
 > **Note:** This will install OpenAD in your global space. If you wish to use a virtual environment, please see more [detailed instructions](#installation) below.
-
-<!-- git clone https://github.com/acceleratedscience/open-ad-toolkit.git
-    cd open-ad-toolkit
-    ./setup.sh
-    [follow instructions]
-    openad -->
 
     pip install openad
     openad
@@ -26,7 +18,15 @@ Get started with Jupyter:
     init_examples
     jupyter lab ~/openad_notebooks/Table_of_Contents.ipynb
 
+<br>
+
 <hr>
+
+### Before You Start <!-- omit from toc -->
+
+-   OpenAD is available for Linux and MacOS
+-   We support Windows 11 via WSL 2 (ubuntu 22.04) - see [Installing on Windows](#installing-on-windows)
+-   When not installing into a virtual environment on MacOS, you may need to use `python3` and `pip3` instead of `python` and `pip` respectively<br>
 
 ## Table of Contents <!-- omit from toc -->
 
@@ -41,28 +41,29 @@ Get started with Jupyter:
     - [Sample Commands](#sample-commands)
     - [Running Bash Commands (CLI)](#running-bash-commands-cli)
 - [AI Assistant](#ai-assistant)
-- [Contribute](#contribute)
+- [For Developers](#for-developers)
   - [Installation for Development](#installation-for-development)
   - [Testing a branch](#testing-a-branch)
 - [Installing on Windows](#installing-on-windows)
   - [Before you start](#before-you-start)
   - [Installing WSL](#installing-wsl)
+- [Linux Notes](#linux-notes)
 
-### Before You Start <!-- omit from toc -->
-
--   OpenAD is available for Linux and MacOS
--   We support Windows 11 via WSL 2 (ubuntu 22.04) - see [Installing on Windows](#installing-on-windows)
--   When not installing into a virtual environment on MacOS, you may need to use `python3` and `pip3` instead of `python` and `pip` respectively<br>
 
 <hr>
+
+<br>
 
 # Installation
 
 > **Note:** Contributors should skip to [Installation for Development](#installation-for-development)<br>
+> **Note:** Linux users may want to check the [Linux Notes](#linux-notes)<br>
 > **Note:** If you prefer using poetry and you know what you're doing, you can skip the instructions below and run `poetry add openad` instead.
 
 1.  **Step 0: Before you start**<br>
-Ensure you're running Python 3.10.10 or above. There's multiple ways of doing this, we'll use pyenv.
+Ensure you're running Python 3.10 or 3.11. There's multiple ways of updating Python, we'll use pyenv.
+
+    > **Note:** Due to an issue with one of our dependencies, Python 3.12 is not yet supported.
 
         git clone https://github.com/pyenv/pyenv.git ~/.pyenv
         pyenv install 3.10
@@ -133,8 +134,19 @@ The following commands only need to be run once after installation:
     This enables OpenAD commands to be run within a Jupyter Notebook.
 
         init_magic
+    
+    <details>
+    <summary><b>Alternative:</b> Manually add magic commands</summary>
+    <div markdown="block">
+    If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.<br>
+    - Run `init_examples`
+    - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.
+    - In your Notebook, run this inside a code cell: `!run openad.ipynb`
+    </div>
+    </details>
 
-1.  **Install example Notebooks**<br>
+
+2.  **Install example Notebooks**<br>
     This installs our example Notebooks at `~/openad_notebooks`.
     
         init_examples
@@ -266,7 +278,7 @@ To enable our AI assistant, you'll need an account with OpenAI. There is a one m
 
 <br>
 
-# Contribute
+# For Developers
 
 OpenAD is fully open source and we encourage contributions. We plan to provide documentation on how to integrate your own toolkits in the future.
 
@@ -350,10 +362,13 @@ Install WSL and create a user called 'openad' or one of your choosing.
 
     wsl --install Ubuntu-22.04
 
-**Optional:** If you wish to setup an Ubuntu Python environment from scratch.
+**Optional:** To setup an Ubuntu Python environment from scratch, continue to [Linux Notes](#linux-notes)
 
-<div style="background:red;color:yellow;margin-bottom: 8px;">@Phil The original instruction was unclear to me: "If Running WSL ubuntu or you wish to setup a ubuntu python environment from scratch run the below to setup the environment
-"</div>
+<br>
+
+# Linux Notes
+
+If you wish to setup an Ubuntu Python environment from scratch, run:
 
     sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt update
@@ -362,13 +377,10 @@ Install WSL and create a user called 'openad' or one of your choosing.
     sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 100
     sudo pip install pip --upgrade
 
-You may also need to setup the default iPython profile for magic commands
-
-<div style="background:red;color:yellow;margin-bottom: 8px;">@Phil What's the context here of "you may have to"?</div>
+If you get an error when running `init_magic`, you may first need to setup the default iPython profile for magic commands.
 
     ipython profile create
 
-<div style="background:red;color:yellow;margin-bottom: 8px;">@Phil section about <a href="https://acceleratedscience.github.io/open-ad-toolkit/docs/getting_started.html">manually adding magic commands</a>, do we need this?</div>
 
 <!--
 
