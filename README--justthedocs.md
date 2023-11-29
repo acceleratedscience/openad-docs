@@ -1,11 +1,11 @@
-# OpenAD Docs
+# OpenAD Documentation
 
-This repo holds the homepage & documentation for the OpenAD platform.
+This repo holds the documentation for the OpenAD documentation. It runs on (Just the Docs)[https://just-the-docs.com/], which is a responsive Jekyll theme.
 
-[OpenAD Docs](https://themoenen.github.io/openad-docs) (temporary URL)
-[OpenAD Github](https://github.com/acceleratedscience/open-ad-toolkit)
+The documentation currently lives on a temporary URL:
+[https://themoenen.github.io/openad-docs]
 
-## Previewing this site locally
+## Previewing the Site Locally
 
 Assuming [Jekyll] and [Bundler] are installed on your computer:
 
