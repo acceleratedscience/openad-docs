@@ -20,7 +20,7 @@ To see how to work with workspaces:
 
 Toolkits are highly specialized applications that OpenAD interfaces with. By interacting with the toolkits through OpenAD, you can bypass a lot of complexity and different inconsistent APIs.
 
-The available tookits for the OpenAD beta are **DS4SD** (DeepSearch) and **RXN** with support for **ST4SD** and **GT4SD** coming soon. For more information about them, go to [Overview]({ link index.md }).
+The available tookits for the OpenAD beta are **DS4SD** (DeepSearch) and **RXN** with support for **ST4SD** and **GT4SD** coming soon. For more information about the individual toolkits, click [here]({% link index.md %}#toolkits).
 
 In the future, we hope to expand our toolkit offering with other opensource tools and users will be able to create and customize their own.
 

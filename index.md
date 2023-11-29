@@ -10,11 +10,13 @@ nav_order: 1
 
 ![Landing](assets/screenshot-landing.png)
 
-OpenAD is an openSource framework developed by IBM Research, aggregating a number of molecular science toolkits into a single API that can be accessed by command line, a Jupyter Notebook and (soon) an API.
+OpenAD is an open-source framework developed by IBM Research, aggregating a number of molecular science toolkits into a single API that can be accessed by command line, a Jupyter Notebook and (soon) an API.
 
 The goal of openAD is to provide a common language for scientists to interact with a multitude of of molecular tools to simplify the triage process and drastically accelerate your development timelines.
 
-The OpenAD Beta will be integrating with the following IBM Research toolkits:
+## Toolkits
+
+The OpenAD Beta integrates with the following IBM Research [toolkits]({% link base-concepts.md %}#toolkits):
 
 -   ### [DS4SD](https://ds4sd.github.io/)
 

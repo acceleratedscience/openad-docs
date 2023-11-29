@@ -166,12 +166,12 @@ p.no-gap {
 }
 
 // Expandable blocks
-details[open] > div,
+details[open] > div:first-child:last-child,
 details[open] > ol,
 details[open] > ul {
 	border-left: solid 1px lightblue;
 }
-details[open] > div {
+details[open] > div:first-child:last-child {
 	padding-left: 16px;
 }
 details[open] > ol,
@@ -207,5 +207,5 @@ details[open] summary {
 	// color: #cf2c00;
 	padding: 0.5em;
 	border-radius: 3px;
-	margin-bottom: 4px;
+	margin-bottom: 0.5em;
 }
