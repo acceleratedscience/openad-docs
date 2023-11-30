@@ -185,16 +185,16 @@ The following commands only need to be run once after installation:
     </details>
 
     <details markdown="block">
-<summary><b>Click to expand!</b></summary>
+    <summary><b>Click to expand!</b></summary>
 
-- This is a Markdown list item
-- Another list item
+    - This is a Markdown list item
+    - Another list item
 
-**Bold Text** and _italic text_.
+    **Bold Text** and _italic text_.
 
-`Code snippet`
+    `Code snippet`
 
-</details>
+    </details>
 
     > **Alternative:** Manually add magic commands
     > ...
