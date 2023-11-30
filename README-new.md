@@ -176,16 +176,16 @@ The following commands only need to be run once after installation:
 
         init_magic
     
-    <details>
-    <summary><b>Alternative:</b> Manually add magic commands</summary>
+    <details markdown="block">
+    <summary><b>Alternative:</b> Manually add magic commands</summary><br>
     If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.<br>
-    - Run `init_examples`
-    - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.
+    - Run `init_examples`<br>
+    - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.<br>
     - In your Notebook, run this inside a code cell: `!run openad.ipynb`
     </details>
 
     > **Alternative:** Manually add magic commands
-    > - -
+    > ...
     > If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.<br>
     > - Run `init_examples`
     > - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.
