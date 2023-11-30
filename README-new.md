@@ -243,12 +243,13 @@ Before you can interact with the toolkits, you'll need to register with each ind
 
 1. Once inside the OpenAD client, you'll be prompted to authenticate when activating the DeepSearch (DS4SD) toolkit. When running `set context ds4sd` :
 
-    - **Hostname:** [https://sds.app.accelerate.science](https://sds.app.accelerate.science)
-    - **Email:** Your email
-    - **API_key:** The DS4SD API key you obtained following the instructions above.<br>
+   -   **Hostname:** [https://sds.app.accelerate.science](https://sds.app.accelerate.science)
+   -   **Email:** Your email
+   -   **API_key:** The DS4SD API key you obtained following the instructions above.
+        
         > **Note:** Your DS4SD auth config file is saved as `~/.openad/ds-auth.ext-v2.json`. If you ever want to reset your DS4SD login information, simply delete this file.<br>
 
-1. You should get a message saying you successfully logged in.
+2. You should get a message saying you successfully logged in.
 
 </div>
 </details>
