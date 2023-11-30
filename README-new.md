@@ -144,7 +144,7 @@ The following commands only need to be run once after installation:
 
         init_magic
     
-    <details>
+    <details markdown="block">
     <summary><b>Alternative:</b> Manually add magic commands</summary>
     <div markdown="block">
     If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.<br>
