@@ -177,9 +177,7 @@ The following commands only need to be run once after installation:
         init_magic
     
     <details>
-
     <summary><b>Alternative:</b> Manually add magic commands</summary>
-
     <div markdown="block">
 
     If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.
@@ -191,7 +189,7 @@ The following commands only need to be run once after installation:
     </details>
 
 
-2.  **Install example Notebooks**<br>
+1.  **Install example Notebooks**<br>
     This installs our example Notebooks at `~/openad_notebooks`.
     
         init_examples
