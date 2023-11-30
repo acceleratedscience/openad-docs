@@ -230,6 +230,7 @@ Before you can interact with the toolkits, you'll need to register with each ind
 <details>
 <summary>Register with DS4SD (DeepSearch)</summary>
 <div markdown="block">
+
 1. First, you'll need to generate an API key on the DeepSearch website.
 
     - Visit the DeepSearch website and create an account:<br>
@@ -240,20 +241,22 @@ Before you can interact with the toolkits, you'll need to register with each ind
       <!-- ![Landing](assets/ds4sd-api-key.png) -->
       <a href="assets/ds4sd-api-key.png" target="_blank"><img src="assets/ds4sd-api-key.png" /></a>
 
-2. Once inside the OpenAD client, you'll be prompted to authenticate when activating the DeepSearch (DS4SD) toolkit. When running `set context ds4sd` :
+1. Once inside the OpenAD client, you'll be prompted to authenticate when activating the DeepSearch (DS4SD) toolkit. When running `set context ds4sd` :
 
     - **Hostname:** [https://sds.app.accelerate.science](https://sds.app.accelerate.science)
     - **Email:** Your email
     - **API_key:** The DS4SD API key you obtained following the instructions above.<br>
         > **Note:** Your DS4SD auth config file is saved as `~/.openad/ds-auth.ext-v2.json`. If you ever want to reset your DS4SD login information, simply delete this file.<br>
 
-3. You should get a message saying you successfully logged in.
+1. You should get a message saying you successfully logged in.
+
 </div>
 </details>
 
 <details>
 <summary>Register with RXN</summary>
 <div markdown="block">
+
 1.  First, you'll need to generate an API key on the RXN website.
 
     -   Sign up for an RXN account at [rxn.app.accelerate.science](https://rxn.app.accelerate.science)
@@ -262,14 +265,15 @@ Before you can interact with the toolkits, you'll need to register with each ind
         <!-- ![Landing](assets/rxn-api-key.png) -->
         <a href="assets/rxn-api-key.png" target="_blank"><img src="assets/rxn-api-key.png" /></a>
 
-2.  When setting the context to RXN using `set context rxn` you'll be prompted to create a new auth configuration file:
+1.  When setting the context to RXN using `set context rxn` you'll be prompted to create a new auth configuration file:
 
     -   **Hostname:** [https://rxn.app.accelerate.science](https://rxn.app.accelerate.science)<br>
     -   **API_key:** The RXN API key you obtained following the instructions above.
 
-3.  You should get a message saying you successfully logged in.<br>
+1.  You should get a message saying you successfully logged in.<br>
 
     > **Note:** Your RXN auth config file is saved as `~/.openad/rxn-auth.ext-v2.json`. If you ever want to reset your RXN login information, simply delete this file. You can also do this by running `set context ds4sd reset`<br>
+
 </div>
 </details>
 
