@@ -327,6 +327,7 @@ If you have any questions in the meantime, please [reach out]({% link about.md %
 <details>
 <summary>Install using the setup wizard (uses poetry)</summary>
 <div markdown="block">
+
 1.  **Step 1: Download the repo**
 
         git clone https://github.com/acceleratedscience/open-ad-toolkit.git
@@ -338,12 +339,14 @@ If you have any questions in the meantime, please [reach out]({% link about.md %
 
         cd open-ad-toolkit
         ./setup.sh
+
 </div>
 </details>
 
 <details>
 <summary>Install using pip</summary>
 <div markdown="block">
+
 1.  **Step 0: Before you start**<br>
 Ensure you're running Python 3.10.10 or above. There's multiple ways of doing this, we'll use pyenv.
 
@@ -357,19 +360,20 @@ Ensure you're running Python 3.10.10 or above. There's multiple ways of doing th
 
     > **Note:** To exit the virtual environment, you can run `deactivate`
 
-2.  **Step 2: Download the repo**
+1.  **Step 2: Download the repo**
 
         git clone https://github.com/acceleratedscience/open-ad-toolkit.git
 
     > **Note:** To download a specific branch, you can run instead:<br>
     `git clone -b <branch_name> https://github.com/acceleratedscience/open-ad-toolkit.git`
 
-3.  **Step 2: Install the requirements**
+1.  **Step 2: Install the requirements**
 
         cd open-ad-toolkit
         pip install -e .
     
     > **Note:** The -e flag stands for "editable". This means that instead of copying the package's files to the Python site-packages directory as in a regular installation, pip creates a symbolic link (symlink) from your package's source code directory into your Python environment.<br>This way you can make changes to the source code of the package, and those changes are immediately reflected in your Python environment. You don't need to reinstall the package every time you make a change.
+
 </div>
 </details>
 
