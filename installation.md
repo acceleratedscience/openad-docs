@@ -4,13 +4,23 @@ layout: home
 nav_order: 2
 ---
 
-## Quick Install <!-- omit from toc -->
+<!--
+
+DO NOT EDIT
+-----------
+This file auto-generated from the main OpenAD README.md
+To update it, edit the main README.md and then regenerate this file.
+For instructions, see openad/docs/generate-docs.py
+
+-->
+
+
+## Quick Install 
 
 > **Note:** This will install OpenAD in your global space. If you wish to use a virtual environment, please see more [detailed instructions](#installation) below.
 
     pip install openad
     openad
-
 
 Get started with Jupyter:
 
@@ -22,33 +32,33 @@ Get started with Jupyter:
 
 <hr>
 
-### Before You Start <!-- omit from toc -->
+### Before You Start 
 
 -   OpenAD is available for Linux and MacOS
 -   We support Windows 11 via WSL 2 (ubuntu 22.04) - see [Installing on Windows](#installing-on-windows)
 -   When not installing into a virtual environment on MacOS, you may need to use `python3` and `pip3` instead of `python` and `pip` respectively<br>
 
-## Table of Contents <!-- omit from toc -->
+## Table of Contents 
 
+- [OpenAD](#openad)
 - [Installation](#installation)
 - [Getting Started - CLI](#getting-started---cli)
 - [Getting Started - Jupyter](#getting-started---jupyter)
-  - [Setting up Jupyter](#setting-up-jupyter)
-  - [Launching OpenAD in Jupyter](#launching-openad-in-jupyter)
+	- [Setting up Jupyter](#setting-up-jupyter)
+	- [Launching OpenAD in Jupyter](#launching-openad-in-jupyter)
 - [Interacting with the Toolkits](#interacting-with-the-toolkits)
-    - [Registration](#registration)
-    - [Adding a Toolkit](#adding-a-toolkit)
-    - [Sample Commands](#sample-commands)
-    - [Running Bash Commands (CLI)](#running-bash-commands-cli)
+		- [Registration](#registration)
+		- [Adding a Toolkit](#adding-a-toolkit)
+		- [Sample Commands](#sample-commands)
+		- [Running Bash Commands (CLI)](#running-bash-commands-cli)
 - [AI Assistant](#ai-assistant)
 - [For Developers](#for-developers)
-  - [Installation for Development](#installation-for-development)
-  - [Testing a branch](#testing-a-branch)
+	- [Installation for Development](#installation-for-development)
+	- [Testing a branch](#testing-a-branch)
 - [Installing on Windows](#installing-on-windows)
-  - [Before you start](#before-you-start)
-  - [Installing WSL](#installing-wsl)
+	- [Before you start](#before-you-start)
+	- [Installing WSL](#installing-wsl)
 - [Linux Notes](#linux-notes)
-
 
 <hr>
 
@@ -84,7 +94,7 @@ Ensure you're running Python 3.10 or 3.11. There's multiple ways of updating Pyt
 # Getting Started - CLI
 
 -   **Enter the virtual environment**
-    
+
     > **Note:** If you just installed OpenAD, you probably already activated the virtual environment.
 
         source ~/ad-venv/bin/activate
@@ -92,9 +102,6 @@ Ensure you're running Python 3.10 or 3.11. There's multiple ways of updating Pyt
 -   **Enter the command shell**
 
         openad
-
-    <!-- ![Landing](assets/screenshot-landing.png) -->
-    <!-- <a href="assets/screenshot-landing.png" target="_blank"><img src="assets/screenshot-landing.png" /></a> -->
 
 -   **Exit the command shell**<br>
     Hit `ctrl+c` or run:
@@ -127,28 +134,29 @@ The following commands only need to be run once after installation:
     This ports your virtual environment to Jupyter.
 
         python -m ipykernel install --user --name=ad-venv
-    
+
     > **Note:** To list your installed iPython kernels, you can run `jupyter kernelspec list`, and to remove the kernel you can run `jupyter kernelspec uninstall ad-venv`
 
 1.  **Install the magic commands**<br>
     This enables OpenAD commands to be run within a Jupyter Notebook.
 
         init_magic
-    
+
     <details>
     <summary><b>Alternative:</b> Manually add magic commands</summary>
     <div markdown="block">
-    If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.<br>
+
+    If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.
     - Run `init_examples`
     - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.
     - In your Notebook, run this inside a code cell: `!run openad.ipynb`
+
     </div>
     </details>
 
-
 2.  **Install example Notebooks**<br>
     This installs our example Notebooks at `~/openad_notebooks`.
-    
+
         init_examples
 
 ## Launching OpenAD in Jupyter
@@ -199,7 +207,7 @@ Before you can interact with the toolkits, you'll need to register with each ind
     - Once logged in, click the Toolkit/API icon in the top right hand corner, then open the HTTP section
     - Click the "Generate new API key" button<br>
       <br>
-      <!-- ![Landing](assets/ds4sd-api-key.png) -->
+
       <a href="assets/ds4sd-api-key.png" target="_blank"><img src="assets/ds4sd-api-key.png" /></a>
 
 2. Once inside the OpenAD client, you'll be prompted to authenticate when activating the DeepSearch (DS4SD) toolkit. When running `set context ds4sd` :
@@ -221,7 +229,7 @@ Before you can interact with the toolkits, you'll need to register with each ind
     -   Sign up for an RXN account at [rxn.app.accelerate.science](https://rxn.app.accelerate.science)
     -   Obtain your API key by clicking the user profile icon in the top right hand corner and select "My profile".<br>
         <br>
-        <!-- ![Landing](assets/rxn-api-key.png) -->
+
         <a href="assets/rxn-api-key.png" target="_blank"><img src="assets/rxn-api-key.png" /></a>
 
 2.  When setting the context to RXN using `set context rxn` you'll be prompted to create a new auth configuration file:
@@ -273,8 +281,6 @@ To enable our AI assistant, you'll need an account with OpenAI. There is a one m
 4. Run `tell me` to be prompted for your OpenAI API credentials
 
 5. Your hostname is [https://api.openai.com/v1/models](https://api.openai.com/v1/models)
-
-<!-- ![Landing](readme/openai-api-key.png) -->
 
 <a href="assets/openai-api-key.png" target="_blank"><img src="assets/openai-api-key.png" /></a>
 
@@ -332,11 +338,10 @@ Ensure you're running Python 3.10.10 or above. There's multiple ways of doing th
 
         cd open-ad-toolkit
         pip install -e .
-    
+
     > **Note:** The -e flag stands for "editable". This means that instead of copying the package's files to the Python site-packages directory as in a regular installation, pip creates a symbolic link (symlink) from your package's source code directory into your Python environment.<br>This way you can make changes to the source code of the package, and those changes are immediately reflected in your Python environment. You don't need to reinstall the package every time you make a change.
 </div>
 </details>
-
 
 ## Testing a branch
 
@@ -382,29 +387,3 @@ If you wish to setup an Ubuntu Python environment from scratch, run:
 If you get an error when running `init_magic`, you may first need to setup the default iPython profile for magic commands.
 
     ipython profile create
-
-
-<!--
-
-For screenshots to look good, they should be small and ideally
-all the same size. The script below lets you open the URLs in
-the right size. Just paste this into the browser console and
-press enter.
-
-To take the screenshots with browser UI included on Mac, press
-cmd+shift+4 followed by the spacebar, then click the window.
-For consistency, stick to Chrome.
-
-- - -
-
-urls = [
-    'https://cps.foc-deepsearch.zurich.ibm.com',
-    'https://rxn.app.accelerate.science',
-    'https://sds.app.accelerate.science',
-    'https://platform.openai.com/account/api-keys'
-]
-for (var i=0; i< urls.length; i++) {
-    window.open(urls[i], '_blank', 'width=1000,height=600');
-}
-
--->

@@ -1,14 +1,5 @@
 <!--
 
-UPDATING README
----------------
-Whenever updating the readme, please make sure to sync it with
-our just-the-docs documentation which lives in a different repo.
-
-
-
-SCREENSHOTS
------------
 For screenshots to look good, they should be small and ideally
 all the same size. The script below lets you open the URLs in
 the right size. Just paste this into the browser console and
@@ -17,6 +8,8 @@ press enter.
 To take the screenshots with browser UI included on Mac, press
 cmd+shift+4 followed by the spacebar, then click the window.
 For consistency, stick to Chrome.
+
+- - -
 
 urls = [
     'https://cps.foc-deepsearch.zurich.ibm.com',
@@ -179,15 +172,17 @@ The following commands only need to be run once after installation:
     <details>
     <summary><b>Alternative:</b> Manually add magic commands</summary>
     <div markdown="block">
+
     If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.
     - Run `init_examples`
     - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.
     - In your Notebook, run this inside a code cell: `!run openad.ipynb`
+	
     </div>
     </details>
 
 
-1.  **Install example Notebooks**<br>
+2.  **Install example Notebooks**<br>
     This installs our example Notebooks at `~/openad_notebooks`.
     
         init_examples
