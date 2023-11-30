@@ -246,10 +246,10 @@ Before you can interact with the toolkits, you'll need to register with each ind
    - **Hostname:** [https://sds.app.accelerate.science](https://sds.app.accelerate.science)
    - **Email:** Your email
    - **API_key:** The DS4SD API key you obtained following the instructions above.
-        
-        > **Note:** Your DS4SD auth config file is saved as `~/.openad/deepsearch_api.cred`. If you ever want to reset your DS4SD login information you can run `set context ds4sd reset`, or you can delete this file.<br>
 
-2. You should get a message saying you successfully logged in.
+1. You should get a message saying you successfully logged in.
+
+    > **Note:** Your DS4SD auth config file is saved as `~/.openad/deepsearch_api.cred`. If you ever want to reset your DS4SD login information you can run `set context ds4sd reset`, or you can delete this file.<br>
 
 </div>
 </details>
@@ -258,7 +258,7 @@ Before you can interact with the toolkits, you'll need to register with each ind
 <summary>Register with RXN</summary>
 <div markdown="block">
 
-1.  First, you'll need to generate an API key on the RXN website.
+1. First, you'll need to generate an API key on the RXN website.
 
     -   Sign up for an RXN account at [rxn.app.accelerate.science](https://rxn.app.accelerate.science)
     -   Obtain your API key by clicking the user profile icon in the top right hand corner and select "My profile".<br>
@@ -266,14 +266,14 @@ Before you can interact with the toolkits, you'll need to register with each ind
         <!-- ![Landing](assets/rxn-api-key.png) -->
         <a href="assets/rxn-api-key.png" target="_blank"><img src="assets/rxn-api-key.png" /></a>
 
-1.  When setting the context to RXN using `set context rxn` you'll be prompted to create a new auth configuration file:
+1. When setting the context to RXN using `set context rxn` you'll be prompted to create a new auth configuration file:
 
     -   **Hostname:** [https://rxn.app.accelerate.science](https://rxn.app.accelerate.science)<br>
     -   **API_key:** The RXN API key you obtained following the instructions above.
 
-1.  You should get a message saying you successfully logged in.<br>
+1. You should get a message saying you successfully logged in.<br>
 
-    > **Note:** Your RXN auth config file is saved as `~/.openad/rxn-auth.ext-v2.json`. If you ever want to reset your RXN login information, simply delete this file. You can also do this by running `set context ds4sd reset`<br>
+    > **Note:** Your RXN auth config file is saved as `~/.openad/rxn_api.cred`. If you ever want to reset your RXN login information you can run `set context rxn reset`, or you can delete this file.<br>
 
 </div>
 </details>
