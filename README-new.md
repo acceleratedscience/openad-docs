@@ -335,7 +335,7 @@ If you have any questions in the meantime, please [reach out]({% link about.md %
     > **Note:** To download a specific branch, you can run instead:<br>
     `git clone -b <branch_name> https://github.com/acceleratedscience/open-ad-toolkit.git`
 
-2.  **Step 2: Launch the setup wizard**
+1.  **Step 2: Launch the setup wizard**
 
         cd open-ad-toolkit
         ./setup.sh
