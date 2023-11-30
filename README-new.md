@@ -184,6 +184,18 @@ The following commands only need to be run once after installation:
     - In your Notebook, run this inside a code cell: `!run openad.ipynb`
     </details>
 
+    <details markdown="block">
+<summary><b>Click to expand!</b></summary>
+
+- This is a Markdown list item
+- Another list item
+
+**Bold Text** and _italic text_.
+
+`Code snippet`
+
+</details>
+
     > **Alternative:** Manually add magic commands
     > ...
     > If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.<br>
