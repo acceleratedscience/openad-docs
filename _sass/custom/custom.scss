@@ -166,20 +166,11 @@ p.no-gap {
 }
 
 // Expandable blocks
-details[open] > div:first-child:last-child,
-details[open] > ol,
-details[open] > ul {
+details[open] > div:nth-child(2):last-child {
 	border-left: solid 1px lightblue;
 }
-details[open] > div:first-child:last-child {
-	padding-left: 16px;
-}
-details[open] > ol,
-details[open] > ul {
-	padding-left: 2rem;
-}
-details[open] summary {
-	// margin-left: -16px;
+details[open] > div:nth-child(2):last-child {
+	padding-left: 8px;
 }
 
 // Mini labels

@@ -1,8 +1,15 @@
+# OpenAD
+[![PyPI version](https://img.shields.io/pypi/v/openad)](https://pypi.org/project/openad/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openad)](https://pypi.org/project/openad/)
+[![License MIT](https://img.shields.io/github/license/acceleratedscience/open-ad-toolkit)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Docs](https://img.shields.io/badge/website-live-brightgreen)](https://github.com/acceleratedscience/open-ad-toolkit)
+
+**Open Accelerated Discovery Client**<br>
+[Project homepage](https://acceleratedscience.github.io/open-ad-toolkit/)
+
 ---
-title: Installation
-layout: home
-nav_order: 2
----
+
 
 ## Quick Install <!-- omit from toc -->
 
@@ -30,6 +37,7 @@ Get started with Jupyter:
 
 ## Table of Contents <!-- omit from toc -->
 
+- [OpenAD](#openad)
 - [Installation](#installation)
 - [Getting Started - CLI](#getting-started---cli)
 - [Getting Started - Jupyter](#getting-started---jupyter)
