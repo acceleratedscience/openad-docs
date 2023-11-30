@@ -40,24 +40,23 @@ Get started with Jupyter:
 
 ## Table of Contents 
 
-- [OpenAD](#openad)
 - [Installation](#installation)
 - [Getting Started - CLI](#getting-started---cli)
 - [Getting Started - Jupyter](#getting-started---jupyter)
-	- [Setting up Jupyter](#setting-up-jupyter)
-	- [Launching OpenAD in Jupyter](#launching-openad-in-jupyter)
+  - [Setting up Jupyter](#setting-up-jupyter)
+  - [Launching OpenAD in Jupyter](#launching-openad-in-jupyter)
 - [Interacting with the Toolkits](#interacting-with-the-toolkits)
-		- [Registration](#registration)
-		- [Adding a Toolkit](#adding-a-toolkit)
-		- [Sample Commands](#sample-commands)
-		- [Running Bash Commands (CLI)](#running-bash-commands-cli)
+    - [Registration](#registration)
+    - [Adding a Toolkit](#adding-a-toolkit)
+    - [Sample Commands](#sample-commands)
+    - [Running Bash Commands (CLI)](#running-bash-commands-cli)
 - [AI Assistant](#ai-assistant)
 - [For Developers](#for-developers)
-	- [Installation for Development](#installation-for-development)
-	- [Testing a branch](#testing-a-branch)
+  - [Installation for Development](#installation-for-development)
+  - [Testing a branch](#testing-a-branch)
 - [Installing on Windows](#installing-on-windows)
-	- [Before you start](#before-you-start)
-	- [Installing WSL](#installing-wsl)
+  - [Before you start](#before-you-start-1)
+  - [Installing WSL](#installing-wsl)
 - [Linux Notes](#linux-notes)
 
 <hr>
@@ -270,7 +269,7 @@ To run a command in bash mode, prepend it with `openad` and make sure to escape 
 
 To enable our AI assistant, you'll need an account with OpenAI. There is a one month free trial.
 
-> **Note:** WatsonX coming soon
+> **Note:** watsonx coming soon
 
 1. Go to [platform.openai.com](https://platform.openai.com) and create an account
 
