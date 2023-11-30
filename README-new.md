@@ -8,8 +8,9 @@
 **Open Accelerated Discovery Client**<br>
 [Project homepage](https://acceleratedscience.github.io/open-ad-toolkit/)
 
----
+<br>
 
+---
 
 ## Quick Install <!-- omit from toc -->
 
