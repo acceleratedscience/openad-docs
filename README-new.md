@@ -176,9 +176,9 @@ The following commands only need to be run once after installation:
 
         init_magic
     
-    <details markdown="block">
+    <details>
 
-    <summary markdown="block"><b>Alternative:</b> Manually add magic commands</summary>
+    <summary><b>Alternative:</b> Manually add magic commands</summary>
 
     <div markdown="block">
 
