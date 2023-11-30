@@ -1,6 +1,38 @@
+<!--
+
+UPDATING README
+---------------
+Whenever updating the readme, please make sure to sync it with
+our just-the-docs documentation which lives in a different repo.
+
+
+
+SCREENSHOTS
+-----------
+For screenshots to look good, they should be small and ideally
+all the same size. The script below lets you open the URLs in
+the right size. Just paste this into the browser console and
+press enter.
+
+To take the screenshots with browser UI included on Mac, press
+cmd+shift+4 followed by the spacebar, then click the window.
+For consistency, stick to Chrome.
+
+urls = [
+    'https://cps.foc-deepsearch.zurich.ibm.com',
+    'https://rxn.app.accelerate.science',
+    'https://sds.app.accelerate.science',
+    'https://platform.openai.com/account/api-keys'
+]
+for (var i=0; i< urls.length; i++) {
+    window.open(urls[i], '_blank', 'width=1000,height=600');
+}
+
+-->
+
 # OpenAD
-[![PyPI version](https://img.shields.io/pypi/v/openad)](https://pypi.org/project/openad/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openad)](https://pypi.org/project/openad/)
+[![PyPI version](https://img.shields.io/pypi/v/openad)](https://pypi.org/project/openad/)
 [![License MIT](https://img.shields.io/github/license/acceleratedscience/open-ad-toolkit)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Docs](https://img.shields.io/badge/website-live-brightgreen)](https://github.com/acceleratedscience/open-ad-toolkit)
@@ -151,6 +183,13 @@ The following commands only need to be run once after installation:
     - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.
     - In your Notebook, run this inside a code cell: `!run openad.ipynb`
     </details>
+
+    > **Alternative:** Manually add magic commands
+    > --
+    > If you don't want to activate magic commands in all Notebooks, you can instead activate them for individual Notebooks.<br>
+    > - Run `init_examples`
+    > - Copy the file `~/openad_notebooks/openad.ipynb` to the same directory as the Notebook you wish to activate.
+    > - In your Notebook, run this inside a code cell: `!run openad.ipynb`
 
 
 2.  **Install example Notebooks**<br>
@@ -389,29 +428,3 @@ If you wish to setup an Ubuntu Python environment from scratch, run:
 If you get an error when running `init_magic`, you may first need to setup the default iPython profile for magic commands.
 
     ipython profile create
-
-
-<!--
-
-For screenshots to look good, they should be small and ideally
-all the same size. The script below lets you open the URLs in
-the right size. Just paste this into the browser console and
-press enter.
-
-To take the screenshots with browser UI included on Mac, press
-cmd+shift+4 followed by the spacebar, then click the window.
-For consistency, stick to Chrome.
-
-- - -
-
-urls = [
-    'https://cps.foc-deepsearch.zurich.ibm.com',
-    'https://rxn.app.accelerate.science',
-    'https://sds.app.accelerate.science',
-    'https://platform.openai.com/account/api-keys'
-]
-for (var i=0; i< urls.length; i++) {
-    window.open(urls[i], '_blank', 'width=1000,height=600');
-}
-
--->
