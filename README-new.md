@@ -178,7 +178,7 @@ The following commands only need to be run once after installation:
     
     <details markdown="block">
 
-    <summary>
+    <summary markdown="block">
     **Alternative:** Manually add magic commands
     
     </summary>
