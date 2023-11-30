@@ -53,7 +53,7 @@ Get started with Jupyter:
 
 <br>
 
-<hr>
+---
 
 ### Before You Start <!-- omit from toc -->
 
@@ -84,7 +84,7 @@ Get started with Jupyter:
 - [Linux Notes](#linux-notes)
 
 
-<hr>
+---
 
 <br>
 
@@ -217,8 +217,10 @@ The following commands only need to be run once after installation:
 
 OpenAD integrates with `DS4SD`, `RXN`, and has placeholder support for `GT4SD` and `ST4SD`.
 
-<div class="notice" style="margin-top: 16px;">
-<b>&#x26A0; Reminder:</b> when running commands from Jupyter, prepend them with `%openad`
+<div class="notice" style="margin-top: 16px;" markdown="block">
+
+**&#x26A0; Reminder:** when running commands from Jupyter, prepend them with `%openad`
+
 </div>
 
 ### Registration
