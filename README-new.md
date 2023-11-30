@@ -247,7 +247,7 @@ Before you can interact with the toolkits, you'll need to register with each ind
    - **Email:** Your email
    - **API_key:** The DS4SD API key you obtained following the instructions above.
         
-    > **Note:** Your DS4SD auth config file is saved as `~/.openad/deepsearch_api.cred`. If you ever want to reset your DS4SD login information you can run `set context ds4sd reset`, or you can delete this file.<br>
+        > **Note:** Your DS4SD auth config file is saved as `~/.openad/deepsearch_api.cred`. If you ever want to reset your DS4SD login information you can run `set context ds4sd reset`, or you can delete this file.<br>
 
 2. You should get a message saying you successfully logged in.
 
