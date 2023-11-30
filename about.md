@@ -15,9 +15,6 @@ Product Director
 **Phil Downey**<br>
 Principle Engineer & Technical Product Manager
 
-**Moenen Erbuer**<br>
-User interface and experience
-
 **Narciso Albarracin**<br>
 Technical Product Manager
 
@@ -26,6 +23,9 @@ Data Science Modules
 
 **Srikanth Koneru**<br>
 DevOps
+
+**Moenen Erbuer**<br>
+User interface and experience
 
 ## Contact
 
