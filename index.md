@@ -28,7 +28,7 @@ The OpenAD Beta integrates with the following IBM Research [toolkits]({% link ba
 
     _Deep Search for Scientific Discovery_<br>
     Connecting & ingesting unstructured data<br>
-    [DS4SD Docs](https://pages.github.ibm.com/DeepSearch/docs/)
+    [DS4SD Docs](https://ds4sd.github.io/deepsearch-toolkit/)
     {: .no-gap }
     <details markdown="block">
     <summary>More</summary>
