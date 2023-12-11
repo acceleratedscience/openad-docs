@@ -32,4 +32,4 @@ User interface and experience
 For general inquiries and question regarding contributing to the codebase:
 
 **Phil Downey**<br>
-phil.downey@ibm.com
+phil.downey1@ibm.com
