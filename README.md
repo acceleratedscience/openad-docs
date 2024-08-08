@@ -1,10 +1,8 @@
 # OpenAD Documentation
 
-This repo contains the documentation website for OpenAD, which can be viewed at:
+This repo contains the documentation website for OpenAD, which can be viewed at:<br>[acceleratedscience.github.io/openad-docs](https://acceleratedscience.github.io/openad-docs/)
 
-[acceleratedscience.github.io/openad-docs](https://acceleratedscience.github.io/openad-docs/)
-
-It is built using [just-the-docs](https://github.com/just-the-docs/just-the-docs) which runs on [Jekyll]. More instructions regarding just-the-docs can be found in the [just-the-docs README].
+> It is built using [just-the-docs](https://github.com/just-the-docs/just-the-docs) which runs on [Jekyll]. More instructions regarding just-the-docs can be found in the [just-the-docs README].
 
 <br>
 
