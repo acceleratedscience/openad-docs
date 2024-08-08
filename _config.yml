@@ -5,9 +5,10 @@ theme: just-the-docs
 url: https://themoenen.github.io/openad-docs
 
 aux_links:
-    IBM Research: https://research.ibm.com/
-    Accelerate Science: https://accelerate.science/
-    GitHub: https://github.com/acceleratedscience/open-ad-toolkit
+  IBM Research: https://research.ibm.com/
+  Accelerate Science: https://accelerate.science/
+  Homepage: https://accelerate.science/projects/openad
+  GitHub: https://github.com/acceleratedscience/open-ad-toolkit
 
 # Carbon customization
 color_scheme: ibm-light

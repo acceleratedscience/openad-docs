@@ -6,7 +6,7 @@ nav_order: 1
 
 # Open Accelerated Discovery
 
-**Opensource Toolkits for Molecular Science**
+**Open-source Framework for Molecular and Materials Discovery**
 
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openad)](https://pypi.org/project/openad/)
 [![PyPI version](https://img.shields.io/pypi/v/openad)](https://pypi.org/project/openad/)
@@ -17,9 +17,15 @@ nav_order: 1
 
 ![Landing](assets/screenshot-landing.png)
 
+<!-- description -->
+
 OpenAD is an open-source framework for molecular and materials discovery developed by IBM Research.
 
-The OpenAD client is accessible from a command line interface, Jupyter Notebooks and an API. It provides unified access to a variety of tools and AI models for literature knowledge extraction, synthesis prediction (forward and retro-), generative methods and property inference. You can train models on your own data as well as visualize and filter candidate molecules.
+The OpenAD client is accessible from a command line interface, Jupyter Notebook and an API. It provides unified access to a variety of tools and AI models for literature knowledge extraction, synthesis prediction (forward and retro-), generative methods and property inference. You can train models on your own data as well as visualize and filter candidate molecules.
+
+<!-- /description -->
+
+[Homepage](https://accelerate.science/projects/openad)
 
 ## Toolkits
 
