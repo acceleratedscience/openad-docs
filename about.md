@@ -5,12 +5,12 @@ layout: home
 
 # About OpenAD
 
-OpenAD is an opensource initiative by IBM, launched in November 2023.
+OpenAD is an open-source initiative by IBM Research, launched in November 2023.
 
 ## Team
 
-**Karl Wehden**<br>
-Product Director
+**Srikanth Koneru**<br>
+Product Director, DevOps
 
 **Phil Downey**<br>
 Principle Engineer & Technical Product Manager
@@ -21,11 +21,8 @@ Technical Product Manager
 **Dean Elzinga**<br>
 Data Science Modules
 
-**Srikanth Koneru**<br>
-DevOps
-
 **Moenen Erbuer**<br>
-User interface and experience
+Interface and experience design
 
 ## Contact
 
