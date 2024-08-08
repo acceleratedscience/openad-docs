@@ -2,8 +2,16 @@
 
 This repo contains the documentation website for OpenAD, which can be viewed at:<br>[acceleratedscience.github.io/openad-docs](https://acceleratedscience.github.io/openad-docs/)
 
-It is built using [just-the-docs](https://github.com/just-the-docs/just-the-docs) which runs on [Jekyll].<br>
-More instructions regarding just-the-docs can be found in the [just-the-docs README].
+<br>
+
+## Updating Documentation
+
+Most of the documentation is auto-generated from the README file in the main [OpenAD repository]:
+
+- commands.md
+- installation.md
+
+For instructions on how to regenerate the documentation files, please refer to [/docs/generate_docs.py](https://github.com/acceleratedscience/open-ad-toolkit/blob/main/docs/generate_docs.py) in the OpenAD repo.
 
 <br>
 
@@ -29,8 +37,12 @@ The website is automatically redeployed whenever the `main` branch is updated.
     git commit -m "Updated documentation"
     git push
 
-Deployment is managed by GitHub Actions, more information about this in the [just-the-docs README].
+## Tech Stack
+
+The documentation website is built using [just-the-docs](https://github.com/just-the-docs/just-the-docs) which runs on [Jekyll].<br>
+Deployment is managed by GitHub Actions. More information can be found in the [just-the-docs README].
 
 [Jekyll]: https://jekyllrb.com
 [Bundler]: https://bundler.io
 [just-the-docs README]: README-just-the-docs.md
+[OpenAD repository]: https://github.com/acceleratedscience
