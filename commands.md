@@ -475,27 +475,36 @@ Display the currently selected workspace and toolkit. <br><br>
 `display history`{: .cmd }
 Display the last 30 commands run in your current workspace. <br><br>
 
-`clear sessions`{: .cmd }
+`clear sessions [ force ]`{: .cmd }
 Clear any other sessions that may be running. <br><br>
 
 <br>
 
 ### Workspaces
 
+`list workspaces`{: .cmd }
+Lists all your workspaces. <br><br>
+
 `set workspace <workspace_name>`{: .cmd }
 Change the current workspace. <br><br>
 
 `get workspace [ <workspace_name> ]`{: .cmd }
-Display details a workspace. When no workspace name is passed, details of your current workspace are displayed. <br><br>
+Display details a workspace. When no workspace name is defined, details of your current workspace are displayed. <br><br>
+
+`get workspace path`{: .cmd }
+Returns your current workspace path. This is useful when you wish to access your workspace files from a Jupyter Notebook. <br><br>
+
+`show workspace`{: .cmd }
+Open the file browsing interface displaying your workspace files and directories. <br><br>
+
+`open workspace [ <workspace_name> ]`{: .cmd }
+Open your workspace directory in the file explorer of your operating system. This is useful when you want to move or rename files. When no workspace name is defined, your current workspace will open. <br><br>
 
 `create workspace <workspace_name> [ description('<description>') on path '<path>' ]`{: .cmd }
 Create a new workspace with an optional description and path. <br><br>
 
 `remove workspace <workspace_name>`{: .cmd }
 Remove a workspace from your registry. Note that this doesn't remove the workspace's directory. <br><br>
-
-`list workspaces`{: .cmd }
-Lists all your workspaces. <br><br>
 
 <br>
 
