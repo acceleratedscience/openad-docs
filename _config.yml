@@ -1,14 +1,16 @@
 title: OpenAD Docs
-description: Documentation for OpenAD, the Accelerated Discovery Open Toolkit Framework
+description: Documentation for OpenAD, the open-source framework for molecular and materials discovery
 theme: just-the-docs
 
-url: https://themoenen.github.io/openad-docs
+url: https://acceleratedscience.github.io/openad-docs
 
 aux_links:
   IBM Research: https://research.ibm.com/
   Accelerate Science: https://accelerate.science/
   Homepage: https://accelerate.science/projects/openad
   GitHub: https://github.com/acceleratedscience/open-ad-toolkit
+
+nav_external_links_new_tab: true
 
 # Carbon customization
 color_scheme: ibm-light

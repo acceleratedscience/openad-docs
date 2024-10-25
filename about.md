@@ -1,32 +1,38 @@
 ---
 title: About
-layout: home
+layout: default
 ---
 
 # About OpenAD
 
-OpenAD is an open-source initiative by IBM Research, launched in November 2023.
+OpenAD is an open-source framework for molecular and materials discovery.<br>
+It is being developed at [IBM Research](https://research.ibm.com) and was launched in November 2023.
 
 ## Team
 
 **Srikanth Koneru**<br>
-Product Director, DevOps
+Product and Engineering Lead
 
 **Phil Downey**<br>
-Principle Engineer & Technical Product Manager
-
-**Narciso Albarracin**<br>
-Technical Product Manager
+Product Manager
 
 **Dean Elzinga**<br>
-Data Science Modules
+Research Software Engineer / Data Science
+
+**Daniel Choi**<br>
+Software Engineer (MLOps)
+
+**Brian Deuenas**<br>
+Research Software Developer
 
 **Moenen Erbuer**<br>
-Interface and experience design
+Interface and Experience Lead
 
-## Contact
+<br><br>
 
-For general inquiries and question regarding contributing to the codebase:
+## Feedback
 
-**Phil Downey**<br>
-phil.downey1@ibm.com
+- **Feature requests, feedback and questions:**<br>
+  [phil.downey1@ibm.com](mailto:phil.downey1@ibm.com)
+- **Bug reports:**<br>
+  [Create issue on GitHub](https://github.com/acceleratedscience/open-ad-toolkit/issues)
