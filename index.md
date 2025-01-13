@@ -14,7 +14,7 @@ https://github.com/acceleratedscience/open-ad-toolkit/tree/main/docs
 
 -->
 
-<img src="https://raw.githubusercontent.com/acceleratedscience/open-ad-toolkit/readme_update_moe/assets/molecule-header.jpg" width="830" height="300" alt="OpenAD" />
+<img src="https://raw.githubusercontent.com/acceleratedscience/open-ad-toolkit/main/assets/molecule-header.jpg" width="830" height="300" alt="OpenAD" />
 
 # OpenAD
 
@@ -44,7 +44,7 @@ The OpenAD client is accessible from our command line interface, via Jupyter Not
 
 <br><br>
 
-<div align="center"><img src="https://raw.githubusercontent.com/acceleratedscience/open-ad-toolkit/readme_update_moe/assets/openad-ui.png" width="100%" alt="OpenAD interface" /></div>
+<div align="center"><img src="https://raw.githubusercontent.com/acceleratedscience/open-ad-toolkit/main/assets/openad-ui.png" width="100%" alt="OpenAD interface" /></div>
 
 <br><br>
 
